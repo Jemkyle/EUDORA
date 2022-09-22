@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Slab:wght@200;400&family=Tourney:wght@100;200;300;400&display=swap);
+@font-face{
+    font-family: Itim;
+    src: url(webfonts/Itim-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;/* 清除字體預設值 */
+}
+img{
+    display: block;
+    width: 100%;
+}
+body {
+    font-family: Helvetica,Arial,"黑體-繁",'Heiti TC','微軟正黑體','Microsoft JhengHei', sans-serif;
+}
+#top{
+    position:absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#FFF6E3;
+    padding: 20px 110px 20px 40px;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end ;
+}
+#top h1{
+    width: 9%;
+}
+nav ul{
+    list-style: none;/* ul的預設點點拿掉 */
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding: 10px 18px;
+    border: 1px solid transparent; /* 邊框透明 */
+}
+.menu li:hover{
+    border-bottom: 1px solid #0A5FAA;
+}
+.btn:hover{
+    border: 1px solid transparent; /* 邊框透明 */
+}
+.menu a{
+    color: #0A5FAA;
+    text-decoration: none; /* 超連結的底線拿掉 */
+}
+.icon_welcome{
+    display: block;/* 預設是display: list-item; 改變成區塊才能設定高度 */
+    position: absolute;
+    right: 40px;
+    top: 9px;
+    width: 60px;
+    height: 52px;
+    background-image: url(images/welcome.png);
+    background-size: 100%;
+    
+}
+.icon_welcome:hover{
+    display: block;/* 預設是display: list-item; 改變成區塊才能設定高度 */
+    position: absolute;
+    right: 40px;
+    top: 9px;
+    width: 60px;
+    height: 52px;
+    background-image: url(images/welcome_hover.png);
+    background-size: 100%;
+    
+}
+main{
+    margin-top: 80px;/* 把banner推下來 */ 
+}
+#dailycard h3{
+    padding: 200px 300px;
+    font-family: Itim;
+    font-size: 2.5rem;
+    color: #0A5FAA;
+}
+#dailycard h2{
+    margin: -180px 600px;
+    font-family: Itim;
+    font-size: 1rem;
+    color: #787878;
+    white-space:nowrap;
+}
+#dailycard div{
+    position: absolute;
+    z-index: -1;
+}
+.card_list img{
+    margin: 350px 200px;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+}
+.card_list article{
+    display: flex;
+    height: 400px;
+}
+/* 卡片列表 */
+#card{
+    margin: 300px 250px;
+    margin-left: 185px;
+    align-items: center;
+}
+#card div{
+    display: flex;
+    flex-direction: row;
+}
+#card div figure{
+    padding: 30px;
+}
+#card figure img{
+    width: 250px;
+    height: 350px;
+    border-radius: 30px;
+}
+#card figure :hover{
+    display: inline-block;
+	transition-duration: defaultDuration;
+	transition-property: transform;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* footer */
+#footer{
+    position:absolute;
+    display: flex;
+    bottom: -1850px;
+    left: 0;
+    width: 100%;
+    padding: 20px 110PX 20px 40px;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end ;
+}
+#footer h1{
+    width: 9%;
+}
+nav ul{
+    list-style: none;/* ul的預設點點拿掉 */
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding: 10px 18px;
+    border: 1px solid transparent; /* 邊框透明 */
+}
+.menu li:hover{
+    border-bottom: 1px solid #0A5FAA;
+}
+.menu a{
+    color: #0A5FAA;
+    text-decoration: none; /* 超連結的底線拿掉 */
+}
+.icon_welcome{
+    display: block;/* 預設是display: list-item; 改變成區塊才能設定高度 */
+    position: absolute;
+    right: 40px;
+    top: 21px;
+    width: 60px;
+    height: 52px;
+    background-image: url(images/welcome.png);
+    background-size: 100%;
+}
+.icon_welcome:hover{
+    display: block;/* 預設是display: list-item; 改變成區塊才能設定高度 */
+    position: absolute;
+    right: 40px;
+    top: 21px;
+    width: 60px;
+    height: 52px;
+    background-image: url(images/welcome_hover.png);
+    background-size: 100%;
+}
